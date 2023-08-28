@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+       
+        <style>
+            body{
+                background-image: url(./5487841.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 900px;
+                overflow: hidden;
+
+            }
+
+            .container{
+                padding-top: 100px;
+            }
+            h1{
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+       
+        <div class="container" style="width:700px">
+            <div class="form-control">
+                <strong><i><h1>Private Library</h1></strong></i>
+        <input class="form-control form-control-lg" type="text" id="input1" placeholder="Title"><br>
+        <input class="form-control form-control-lg" type="text" id="input2" placeholder="Author"><br>
+        <input class="form-control form-control-lg" type="text" id="input3" placeholder="Year of publishing"><br>
+        <input class="form-control form-control-lg" type="text" id="input4" placeholder="ReadStatus"><br>
+        <button id="submit">Submit</button><br><br>
+        <button class="btn btn-danger" id="button1">Remove last book</button>
+        <br><br>
+        <button class="btn btn-success" id="button2">Add the book in front</button>
+        <br><br>
+        <button class="btn btn-danger" id="button3">Removes the book in front</button>
+        <br><br>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="titles">Titles</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" id="writer2">Writer names</button>
+ 
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">author names</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="author">
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel1">writer names</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="writer1">
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+        <script src="js.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </div>
+    </div>
+    </body>
+</html>
